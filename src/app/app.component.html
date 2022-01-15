@@ -1,0 +1,24 @@
+<header><h1>Welcome to Angular Calculator</h1></header>
+<hr>
+<div class="col-md-4">
+        First Number : <input type ="number"  placeholder="Enter First Number" (change)="inputfnumb($event)"><br><br>
+        Second Number : <input type ="number" placeholder="Enter Second Number" (change)="inputsnumb($event)"><br><br>
+
+        <button type="button" class="btn btn-secondary" (click)="plus()">+</button> &nbsp;
+        <button type="button" class="btn btn-secondary" (click)="minus()">-</button> &nbsp;
+        <button type="button" class="btn btn-secondary" (click)="division()">/</button> &nbsp;
+        <button type="button" class="btn btn-secondary" (click)="multiplication()">*</button>&nbsp;
+        
+        <hr>
+        Answer: <input type="number" placeholder="Answer" value="{{ans}}"> &nbsp;
+        <button type="button" class="btn btn-secondary" value="CLEAR" (click)="clear()">CLEAR !!!</button>
+        
+        
+        
+</div>
+<footer class="py-3 my-4">
+        <hr>
+        <p class="text-center text-muted">© 2021 ArkaDas,Inc.  All rights reserved. </p>
+      </footer>
+
+
